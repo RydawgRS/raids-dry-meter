@@ -217,7 +217,7 @@ public class RaidsDryMeterPlugin extends Plugin
 			drops = convertToUniqueRecords(event.getItems());
 
 			int totalPoints = client.getVarbitValue(Varbits.TOTAL_POINTS);
-			int personalPoints = client.getVarbitValue(Varbits.PERSONAL_POINTS);
+			int personalPoints = client.getVarpValue(VarPlayer.RAIDS_PERSONAL_POINTS);
 
 			for (int uniqueId : UniqueItem.getUniqueItemList(itemManager)){
 				for(ItemStack item : event.getItems())
